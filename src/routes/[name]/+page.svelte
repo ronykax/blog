@@ -1,6 +1,5 @@
 <script lang="ts">
   import { timestamp, getImageURL } from '$lib';
-  import { PUBLIC_DOMAIN } from "$env/static/public";
   
   export let data;
 
@@ -8,7 +7,7 @@
     navigator.share({
       title: data.title,
       text: data.description,
-      url: `${PUBLIC_DOMAIN}/${data.name}`
+      url: `https://blog.rony.lol/${data.name}`
     });
   }
 
