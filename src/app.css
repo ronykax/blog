@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply text-white;
+  font-family: 'Poppins', sans-serif;
+  transition: all 250ms ease-in-out;
+}
+
+body {
+  @apply bg-blackish;
+}
+
+h1 {
+  @apply font-medium;
+  font-size: 2rem;
+}
+
+h2 {
+  @apply font-medium;
+  font-size: 1.5rem;
+}
+
+h3 {
+  @apply font-medium;
+  font-size: 1.17rem;
+}
+
+h4 {
+  @apply font-medium;
+  font-size: 1rem;
+}
+
+h5 {
+  @apply font-medium;
+  font-size: 0.83rem;
+}
+
+h6 {
+  @apply font-medium;
+  font-size: 0.67rem;
+}
+
+p {
+  @apply font-normal leading-loose;
+}
+
+strong {
+  @apply font-bold;
+}
+
+ul {
+  @apply list-disc list-inside;
+}
+
+ol {
+  @apply list-decimal list-inside;
+}
+
+.markdown a {
+  @apply underline underline-offset-4 decoration-1;
+}
+
+.shadow {
+  @apply shadow-2xl shadow-[#00000073];
+}
+
+::-webkit-scrollbar {
+  @apply w-1 bg-blackish;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white bg-opacity-50;
+}
